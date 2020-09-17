@@ -67,7 +67,6 @@ if __name__ == '__main__':
     args = parseArgs()
     files = getFileList(args.directory, args.subdirectory)
     for file in files:
-
         result = rename(file, args.target, args.regex, args.replace)
         if result is None:
             pass
